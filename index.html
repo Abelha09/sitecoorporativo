@@ -9,7 +9,7 @@
 <body class="light">
 
 <header>
-  <div class="logo"><img src="assets/logo.png" alt="TechNova Solutions"></div>
+  <div class="logo"><img src="assets/logo.png" alt="TechNova Solutions" width="120"></div>
   <nav>
     <ul>
       <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
@@ -60,7 +60,17 @@
 <section id="contato">
   <h2 data-pt="Contato" data-en="Contact">Contato</h2>
   <form id="contact-form">
-    <input type="text" id="name" placeholder="Nome" data-pt="Nome" data-en="Name">
-    <input type="email" id="email" placeholder="Email" data-pt="Email" data-en="Email">
-    <textarea id="message" placeholder="Mensagem" data-pt="Mensagem"
+    <input type="text" id="name" placeholder="Nome" data-pt="Nome" data-en="Name" required>
+    <input type="email" id="email" placeholder="Email" data-pt="Email" data-en="Email" required>
+    <textarea id="message" placeholder="Mensagem" data-pt="Mensagem" data-en="Message" required></textarea>
+    <button type="submit" data-pt="Enviar" data-en="Send">Enviar</button>
+  </form>
+</section>
 
+<footer>
+  <p>© 2025 TechNova Solutions</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
