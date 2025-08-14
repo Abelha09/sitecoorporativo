@@ -1,15 +1,22 @@
-// Tema light/dark
-const themeSwitch = document.getElementById('theme-switch');
-themeSwitch.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
+// Theme switch
+const themeBtn = document.getElementById('theme-switch');
+themeBtn.addEventListener('click', () => {
   document.body.classList.toggle('light');
+  document.body.classList.toggle('dark');
 });
 
-// Multi-idioma PT/EN
-const langSwitch = document.getElementById('lang-switch');
-langSwitch.addEventListener('change', () => {
-  const lang = langSwitch.value;
+// Language switch
+const langSelect = document.getElementById('lang-switch');
+langSelect.addEventListener('change', () => {
+  const lang = langSelect.value;
   document.querySelectorAll('[data-pt]').forEach(el => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
+});
+
+// Form submit (simulação)
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Mensagem enviada! Obrigado.');
 });
