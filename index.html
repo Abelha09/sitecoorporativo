@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colmeia Digital</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <img src="assets/logo.png" alt="Logo Colmeia Digital" class="logo">
-    <div class="controls">
-      <button id="themeSwitch">🌙/☀️</button>
-      <select id="langSelect">
-        <option value="pt">PT</option>
-        <option value="en">EN</option>
-      </select>
-    </div>
-  </header>
+<body class="light">
 
-  <main>
-    <h1 data-pt="Bem-vindo à Colmeia Digital" data-en="Welcome to Colmeia Digital">Bem-vindo à Colmeia Digital</h1>
-    <p data-pt="Sua empresa imaginária de soluções digitais" data-en="Your imaginary digital solutions company">
-      Sua empresa imaginária de soluções digitais
-    </p>
-  </main>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="TechNova Solutions">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+                <li><a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a></li>
+                <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="theme-switch">🌙</button>
+            <select id="lang-switch">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- Hero / Landing -->
+    <section id="hero">
+        <h1 data-pt="Bem-vindo à TechNova Solutions" data-en="Welcome to TechNova Solutions">Bem-vindo à TechNova Solutions</h1>
+        <p data-pt="Inovando o futuro, hoje." data-en="Innovating the future, today.">Inovando o futuro, hoje.</p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2 data-pt="Sobre nós" data-en="About us">Sobre nós</h2>
+        <p data-pt="A TechNova Solutions é uma empresa dedicada à inovação tecnológica, oferecendo soluções modernas em desenvolvimento web e Business Intelligence." 
+           data-en="TechNova Solutions is dedicated to technological innovation, providing modern solutions in web development and Business Intelligence.">
+           A TechNova Solutions é uma empresa dedicada à inovação tecnológica, oferecendo soluções modernas em desenvolvimento web e Business Intelligence.
+        </p>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2 data-pt="Serviços" data-en="Services">Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3 data-pt="Desenvolvimento Web" data-en="Web Development">Desenvolvimento Web</h3>
+                <p data-pt="Criação de sites modernos e responsivos." data-en="Modern and responsive website development.">Criação de sites modernos e responsivos.</p>
+            </div>
+            <div class="card">
+                <h3 data-pt="Consultoria em TI" data-en="IT Consulting">Consultoria em TI</h3>
+                <p data-pt="Soluções estratégicas para otimizar sua tecnologia." data-en="Strategic solutions to optimize your technology.">Soluções estratégicas para otimizar sua tecnologia.</p>
+            </div>
+            <div class="card">
+                <h3 data-pt="Business Intelligence" data-en="Business Intelligence">Business Intelligence</h3>
+                <p data-pt="Transformamos dados em decisões inteligentes." data-en="We turn data into smart decisions.">Transformamos dados em decisões inteligentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2 data-pt="Contato" data-en="Contact">Con
